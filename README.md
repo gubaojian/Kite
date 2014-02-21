@@ -149,7 +149,7 @@ if this cann't satisfy you, you can write your own math expression evaluator.
 		
 	}
 	
-2, Register your CustomEvaluator to Kate 
+2, Register your CustomEvaluator to Kite
 
      Kite.setDefaultEvaluator(new CustomEvaluator());
 
