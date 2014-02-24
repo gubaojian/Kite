@@ -1,9 +1,9 @@
 
 ###Introduction
 
-Kite is an Simple Android View Layout Extension Framework. Give you powerful view layouting via json layout parameter; which makes layouting view simple and easily. all you need is two step 
+Kite is an Simple Android View Layout Extension Framework. Give you powerful view layouting via json parameter; which makes layouting view simple and easily. all you need is two step 
 
-1, add json layout parameters with math expression to android:contentDescription or android:tag attribute.
+1, add json parameters with math expression to android:contentDescription or android:tag attribute.
     
     <View
         android:id="@+id/view"  
@@ -16,13 +16,13 @@ Kite is an Simple Android View Layout Extension Framework. Give you powerful vie
         ...
         android:tag="{'height':'screen_height*3', 'width':'screen_width - 20dp'}"/>
 
-2, call Kite.layout(View v) method, then layout parameters will take effect.
+2, call Kite.layout(View v) method, layout parameters will take effect.
      
      Kite.layout(findViewById(R.id.view));
 
 ####1, make view's width = height*0.5 
    
-Add android:contentDescription='{"width":"height*0.5"}' to your TextView
+add android:contentDescription='{"width":"height*0.5"}' to your TextView
   
      <TextView
         android:id="@+id/textview"  
@@ -35,7 +35,7 @@ add Kite.layout(View v) in your code to make the layout parameters take effect
 
 ####2, make view's height = 0.5*width  + screen_height/3.0
 
-Add android:contentDescription='{"height":"0.5*width  + screen_height/3.0"}' to your ViewPager
+add android:contentDescription='{"height":"0.5*width  + screen_height/3.0"}' to your ViewPager
   
      <ViewPager
         android:id="@+id/viewpager"  
@@ -109,13 +109,13 @@ you can write any valid math expression you like; fox example:
     android:tag="{'height':'height*0.3', 'width':'screen_width/2.0 - 40dp'}"       
     android:tag="{'height':'height*0.4 + width/2.0', 'width':'parent_height/3.0  + screen_height/2.0'}"  
     
-####5, Download Kite
+####5, download Kite
     
 Kite use Exp4j as default math expression evaluator. When you use Kite, you need download Exp4j. 
 
-##### [Kite-1.0.0.jar](https://raw.github.com/gubaojian/Kite/master/libs/Kite-1.0.0-SNAPSHOT.jar)
+##### [Kite-1.0.0.jar](https://raw.github.com/gubaojian/Kite/master/bundle/Kite-1.0.0-SNAPSHOT.jar)
 
-##### [Exp4j-0.3.9.jar](https://raw.github.com/gubaojian/Kite/master/libs/exp4j-0.3.9.jar)
+##### [Exp4j-0.3.9.jar](https://raw.github.com/gubaojian/Kite/master/bundle/exp4j-0.3.9.jar)
 
 ##### Maven
 
@@ -137,7 +137,7 @@ Kite also support mvel2 as math expression evaluator. just call
     
 if this cann't satisfy you, you can write your own math expression evaluator. 
 
-1, Make subclass of Evaluator 
+1, create subclass of Evaluator 
 
 	public class CustomEvaluator extends Evaluator {
 		
@@ -149,7 +149,7 @@ if this cann't satisfy you, you can write your own math expression evaluator.
 		
 	}
 	
-2, Register your CustomEvaluator to Kite
+2, register your CustomEvaluator to Kite as default evaluator.
 
      Kite.setDefaultEvaluator(new CustomEvaluator());
 
@@ -157,11 +157,10 @@ Exp4j  [http://www.objecthunter.net/exp4j/](http://www.objecthunter.net/exp4j/)
 
 MVEL2  [http://mvel.codehaus.org/](http://mvel.codehaus.org/)  
   
-Source code for Kite, its samples, and this website is available on GitHub.
 
 ###Bug Reports
 
-you can give suggestions or advice via github or email to me.
+you can give suggestions and bug reports via github or email to me.
 
 Email: gubaojian@163.com
 
