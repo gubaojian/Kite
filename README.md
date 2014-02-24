@@ -153,6 +153,9 @@ if this cann't satisfy you, you can write your own math expression evaluator.
 
      Kite.setDefaultEvaluator(new CustomEvaluator());
 
+
+Kite Api: [http://gubaojian.github.io/Kite/apidocs/](http://gubaojian.github.io/Kite/apidocs/)
+ 
 Exp4j  [http://www.objecthunter.net/exp4j/](http://www.objecthunter.net/exp4j/)
 
 MVEL2  [http://mvel.codehaus.org/](http://mvel.codehaus.org/)  
