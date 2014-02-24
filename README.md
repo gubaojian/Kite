@@ -1,7 +1,7 @@
 
 ###Introduction
 
-Kite is an Simple Android View Layout Extension Framework. Give you powerful view layouting via json math expression layout parameter; which makes layout view simple and easily. all you need is two step 
+Kite is an Simple Android View Layout Extension Framework. Give you powerful view layouting via json layout parameter; which makes layouting view simple and easily. all you need is two step 
 
 1, add json layout parameters with math expression to android:contentDescription or android:tag attribute.
     
@@ -110,6 +110,8 @@ you can write any valid math expression you like; fox example:
     android:tag="{'height':'height*0.4 + width/2.0', 'width':'parent_height/3.0  + screen_height/2.0'}"  
     
 ####5, Download Kite
+    
+Kite use Exp4j as default math expression evaluator. When you use Kite, you need download Exp4j. 
 
 ##### [Kite-1.0.0.jar](https://raw.github.com/gubaojian/Kite/master/libs/Kite-1.0.0-SNAPSHOT.jar)
 
@@ -128,10 +130,8 @@ you can write any valid math expression you like; fox example:
 			<version>0.3.9</version>
     </dependency>
     
-    
-Kite use Exp4j as default math expression evaluator. When you use Kite, you need download Exp4j. 
 
-Kite also support mvel2 as math expression evaluator. just set call
+Kite also support mvel2 as math expression evaluator. just call
  
     Kite.setDefaultEvaluator(new MVEL2Evaluator());
     
