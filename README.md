@@ -1,6 +1,4 @@
-
 ###Introduction
-
 Kite is an Simple Android View Layout Extension Framework. Give you powerful view layouting via json parameter; which makes layouting view simple and easily. all you need is two step 
 
 1, add json parameters with math expression to android:contentDescription or android:tag attribute.
@@ -19,6 +17,12 @@ Kite is an Simple Android View Layout Extension Framework. Give you powerful vie
 2, call Kite.layout(View v) method, layout parameters will take effect.
      
      Kite.layout(findViewById(R.id.view));
+
+Kite Layout Process
+     
+![image](http://gubaojian.github.io/Kite/image/layout.png)
+
+###Quick Start
 
 ####1, make view's width = height*0.5 
    
